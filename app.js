@@ -1,8 +1,12 @@
-const teamAssemblyQuestions = require('./lib/teamAssemblyQuestions').teamAssemblyQuestions;
+// Step 1 collect employee info
+const collectEmployeeData = require('./lib/collectEmployeeData').collectEmployeeData;
+const createEmployee = require('./lib/teamMemberConstructor').createEmployee;
+const generateTeamHtml = require('./lib/generateTeamHtml').generateTeamHtml;
 
-function init() {
-    // Step 1. Call questions required for assembling a teams data.
-    teamAssemblyQuestions();
-}
+const init = async () => {
+    const inputs = await collectEmployeeData();
+    //createEmployee(inputs);
+    generateTeamHtml(inputs);
+};
 
 init();
