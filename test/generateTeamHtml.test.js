@@ -6,6 +6,7 @@ let inputs = [
   { name: 'er', title: 'Intern', email: 'gegrg', school: 'gegrg' }
 ]
 
+//Data is saved as a variables and therfore private and untestable
 test('Should be undefined as it does not return a value but creates the html', () => {
   expect(generateTeamHtml(inputs)).toBeUndefined();
 });
