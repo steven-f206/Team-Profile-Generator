@@ -1,0 +1,30 @@
+{
+  "name": "team-profile-generator",
+  "version": "1.0.0",
+  "description": "CLI tool to create html for a group of people",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/steven-f206/Team-Profile-Generator.git"
+  },
+  "keywords": [
+    "node",
+    "js",
+    "html"
+  ],
+  "author": "Steven Ferreira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/steven-f206/Team-Profile-Generator/issues"
+  },
+  "homepage": "https://github.com/steven-f206/Team-Profile-Generator#readme",
+  "devDependencies": {
+    "jest": "^24.9.0"
+  },
+  "dependencies": {
+    "inquirer": "^7.0.0"
+  }
+}
